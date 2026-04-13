@@ -3,10 +3,14 @@ package config
 import "time"
 
 type Config struct {
-	Replicas    int
-	Namespace   string
-	Image       string
-	Concurrency int
-	Timeout     time.Duration
-	Label       string
+	DeploymentName string
+	Namespace      string
+	Image          string
+	MinReplicas    int
+	MaxReplicas    int
+	Workers        int
+	Cycles         int
+	Dwell          time.Duration
+	Timeout        time.Duration
+	Cleanup        bool
 }
