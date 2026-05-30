@@ -28,10 +28,10 @@ Kubeload spins up multiple concurrent "workers". Each worker creates a Kubernete
 
 ```mermaid
 flowchart LR
-    CLI[Kubeload] --> |1. Creates Deployments| K8s[K8s API]
-    K8s --> |2. Scale Up (Time it!)| Pods
-    K8s --> |3. Scale Down (Time it!)| Pods
-    Pods --> |4. Report Latency| CLI
+    CLI[Kubeload] -->|"1. Creates Deployments"| K8s[K8s API]
+    K8s -->|"2. Scale Up Time"| Pods
+    K8s -->|"3. Scale Down Time"| Pods
+    Pods -->|"4. Report Latency"| CLI
 ```
 
 ## Understanding the Results
